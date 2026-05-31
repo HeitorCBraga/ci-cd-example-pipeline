@@ -62,10 +62,6 @@ The default tag is `ghcr.io/${{ github.repository }}`, which resolves automatica
 - ✅ Require branches to be up to date before merging
 - ✅ Do not allow bypassing
 
-## Using this as a template
-
-If this repo is marked as a GitHub Template (Settings → General → ✅ Template repository), click **Use this template** to create a clean repo with all the files and no commit history.
-
 ## Example application
 
 The `handler/` and `main.go` files are a minimal Go HTTP API used to demonstrate the pipeline:
