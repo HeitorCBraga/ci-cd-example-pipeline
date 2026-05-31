@@ -22,6 +22,8 @@ jobs:
 
       - name: Verify binary compiles
         run: CGO_ENABLED=0 go build -o /dev/null ./...
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@f7ce87c1d6bead3e36075b2ce75da1f6cc28aaca # v3
 
       - name: Log in to GHCR
         uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3
