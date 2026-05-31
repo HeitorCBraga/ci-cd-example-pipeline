@@ -7,7 +7,6 @@ linters:
     - govet
     - staticcheck
     - unused
-    - gofmt
     - gosimple
   settings:
     errcheck:
@@ -19,6 +18,10 @@ linters:
       - path: _test\.go
         linters:
           - errcheck
+
+formatters:
+  enable:
+    - gofmt
 
 issues:
   max-issues-per-linter: 0
