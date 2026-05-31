@@ -1,0 +1,14 @@
+# Binaries
+/server
+
+# Test & coverage artifacts
+coverage.out
+coverage.html
+*.test
+
+# Go cache
+/vendor/
+
+# OS
+.DS_Store
+Thumbs.db

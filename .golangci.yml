@@ -1,0 +1,27 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - errcheck
+    - govet
+    - staticcheck
+    - unused
+    - gofmt
+    - gosimple
+  settings:
+    errcheck:
+      check-type-assertions: true
+    govet:
+      enable-all: true
+    gofmt:
+      simplify: true
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  exclusions:
+    rules:
+      - path: _test\.go
+        linters:
+          - errcheck
